@@ -1,0 +1,85 @@
+body {
+    background: linear-gradient(to bottom, rgb(220, 184, 245), rgb(235, 147, 213));
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: linear-gradient(to bottom, rgb(255, 114, 208), rgb(174, 110, 216));
+    border-radius: 4px;
+    height: 85vh;
+    width: 85vw;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 3px 6px rgba(0, 0, 0, 0.16);
+    text-align: center;
+    animation: zoomIn 0.8s ease-in-out; 
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5); 
+        opacity: 0; 
+    }
+    100% {
+        transform: scale(1); 
+        opacity: 1; 
+    }
+}
+
+h2 {
+    font-family: 'Montserrat';
+    color:rgb(233, 233, 233);
+    text-shadow: 2px 2px 5px rgb(184, 32, 255);
+}
+
+h3 {
+    margin: 10px 55px 20px 55px;
+    font-family: 'Montserrat';
+    color:rgb(233, 233, 233);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    opacity: 0; 
+    animation: fadeIn 1s ease-in forwards; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+}
+
+h5 {
+    color:rgb(233, 233, 233);
+    font-family: 'Montserrat';
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: bounce 1s infinite; 
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); 
+    }
+    40% {
+        transform: translateY(-15px); 
+    }
+    60% {
+        transform: translateY(-10px); 
+    }
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+    box-shadow: 0 4px 8px rgb(184, 32, 255);
+    position: relative;
+    bottom: 0px;
+    margin-bottom: 0px; 
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in forwards;
+}
+
